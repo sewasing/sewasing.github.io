@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid rgb(179, 105, 105);
+    border-bottom: 5px solid rgb(177, 99, 99);
+  }
+@font-face {
+    font-family: '';
+    src: url('fonts/.woff') format('woff'),
+    url('fonts/.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: '';
+  src: url('fonts/.woff') format('woff'),
+  url('fonts/.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+  body {
+    font-family: '';
+    font-size:10px ;
+    line-height: 1.5;
+    letter-spacing:1px ;
+    word-spacing:2px ;
+  }
+  
+  header h1 {
+    text-align: center;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+    font-family: '';
+    letter-spacing: 1.5px;
+  }
+
+  section  h2 + p{
+    text-indent: 20px;
+  }
+
+  a {
+    color: rgb(181, 94, 94);
+
+  }
+
+  a:visited{
+    color: rgb(164, 75, 75);
+  }
+
+  a:focus {
+    color: rgb(136, 78, 78);
+    text-decoration: none;
+    outline: none;
+  }
+
+  a:hover {
+    color: rgb(131, 65, 65);
+    text-decoration: none;
+  }
+
+  a:active {
+    font-weight: bold;
+    color: rgb(83, 123, 198);
+    background-color: rgb(149, 74, 74);  
+  }
+
+  section p a::after {
+    content: ''; 
+    display: inline-block; 
+    width: 8px; 
+    height: 8px; 
+    margin-left: 4px;
+    background: url('external-link-52.png');
+    background-size: contain; 
+  }
+
+  li {
+    line-height: 1.5;
+  }
+
+  ul {
+    list-style-type:square;
+  }
+
+  ol {
+    list-style: lower-alpha;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  nav ul {
+    list-style: none;
+  }
+
+  nav li {
+    border: 2px solid rgb(163, 88, 88) ;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px;
+
+  }
+  </style>
+</head>
+<body>
+    <header>
+      <h1>St Huxley's Community College</h1>
+    </header>
+  
+    <section>
+        <h2>Brave new world</h2>
+  
+        <p>It's a brave new world out there. Our children are being put in increasing more competitive situations, both during recreation, and as they start to move into the adult world of <a href="https://en.wikipedia.org/wiki/Examination">examinations</a>, <a href="https://en.wikipedia.org/wiki/Jobs">jobs</a>, <a href="https://en.wikipedia.org/wiki/Career">careers</a>, and other life choices. Having the wrong mindset, becoming <a href="https://en.wikipedia.org/wiki/Emotion">too emotional</a>, or making the wrong choices can contribute to them experiencing difficulty in taking their rightful place in today's ideal society.</p>
+  
+        <p>As concerned parents, guardians or carers, you will no doubt want to give your children the best possible start in life — and you've come to the right place.</p>
+  
+        <h2>The best start in life</h2>
+  
+        <p>At St. Huxley's, we pride ourselves in not only giving our students a top quality education, but also giving them the societal and emotional intelligence they need to win big in the coming utopia. We not only excel at subjects such as genetics, data mining, and chemistry, but we also include compulsory lessons in:</p>
+  
+        <ul>
+          <li>Emotional control</li>
+          <li>Judgement</li>
+          <li>Assertion</li>
+          <li>Focus and resolve</li>
+        </ul>
+  
+        <p>If you are interested, then you next steps will likely be to:</p>
+        
+        <ol>
+          <li><a href="#">Call us</a> for more information</li>
+          <li><a href="#">Ask for a brochure</a>, which includes signup form</li>
+          <li><a href="#">Book a visit</a>!</li>
+        </ol>
+    </section>
+  
+    <aside>
+  
+      <h2>Top course choices</h2>
+  
+      <ul>
+        <li><a href="#">Genetic engineering</a></li>
+        <li><a href="#">Genetic mutation</a></li>
+        <li><a href="#">Organic Chemistry</a></li>
+        <li><a href="#">Pharmaceuticals</a></li>
+        <li><a href="#">Biochemistry with behaviour</a></li>
+        <li><a href="#">Pure biochemistry</a></li>
+        <li><a href="#">Data mining</a></li>
+        <li><a href="#">Computer security</a></li>
+        <li><a href="#">Bioinformatics</a></li>
+        <li><a href="#">Cybernetics</a></li>
+      </ul>
+  
+      <p><a href="#">See more</a></p>
+  
+    </aside>
+  
+    <nav>
+  
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Finding us</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Prospectus</a></li>
+      </ul>
+  
+    </nav>
+  
+    <footer>
+  
+      <p>&copy; 2016 St Huxley's Community College</p>
+  
+    </footer>
+</body>
+</html>
+<!--
+    Name: kultaran singh
+    Student id: 100941624
+    Date: 24/06/2024
+    this file has the code that helps to type set a web page.
+-->
